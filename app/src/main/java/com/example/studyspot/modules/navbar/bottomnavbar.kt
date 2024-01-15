@@ -83,12 +83,13 @@ fun BottomBar(navController: NavHostController){
 
     if (currentDestination?.route !in listOf(Screen.Login.route, Screen.SignUp.route)) {
         Row {
-            Spacer(modifier = Modifier.size(50.dp))
+            Spacer(modifier = Modifier.size(70.dp))
             Box(
                 modifier = Modifier
                     .clip(CircleShape)
                     .background(semiTransparentColor)
-                    .size(300.dp, 70.dp)
+                    .size(280.dp, 70.dp)
+                    .padding(horizontal = 10.dp)
             ) {
                 Row(modifier = Modifier
                     .padding(8.dp)
